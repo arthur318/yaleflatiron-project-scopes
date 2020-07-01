@@ -1,0 +1,8 @@
+<h1><%= @tag.name %></h1>
+
+
+<ul>
+  <% @tag.jobs.each do |job| %>
+    <li><%= link_to "#{job.role} at #{job.company.name}", job_path(tag)%></li>
+  <% end %>
+</ul>
