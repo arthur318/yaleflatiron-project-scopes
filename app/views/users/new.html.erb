@@ -8,7 +8,7 @@
     </ul>
 <%end%>
 
-<%= form_with model: @user do |f|%>
+<%= form_with url: "/signup", method: "post" do |f| %>
 
     <%= f.label :name %>
     <%= f.text_field :name %> 
@@ -19,8 +19,11 @@
     <%= f.label :email %>
     <%= f.text_field :email %>
 
-    <%= f.label "Password" %>
-    <%= f.text_field :password_digest %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
 
     <%= f.submit %>
 
