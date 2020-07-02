@@ -1,7 +1,12 @@
-<h1>All Jobs</h1>
-
-<ul>
-  <% @jobs.each do |job| %>
-    <li><%= link_to "#{job.role} at #{job.company.name}", job_path(tag)%></li>
-  <% end %>
-</ul>
+<div id="job-index-page-container" class="container-fluid" style="border:10px solid white;">
+    <div class="row" style="border: 8px solid black; border-radius: 10px;">
+        <div class="col-8" style="border: 10px solid white;">
+            <h1><%= "All Existing Applications" %></h1>
+            <ul>
+                <% @jobs.each do |job| %>
+                    <li><%= link_to "#{job.role} at #{job.company.name}", job_path(job)%></li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</div>

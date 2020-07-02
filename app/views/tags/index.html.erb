@@ -1,7 +1,12 @@
-<h1>All Tags</h1>
-
-<ul>
-  <% @tags.each do |tag| %>
-    <li><%= link_to tag.name, tag_path(tag)%></li>
-  <% end %>
-</ul>
+<div id="tag-index-page-container" class="container-fluid" style="border:10px solid white;">
+    <div class="row" style="border: 8px solid black; border-radius: 10px;">
+        <div class="col-8" style="border: 10px solid white;">
+            <h1><%= "All Tags" %></h1>
+            <ul>
+                <% @tags.each do |tag| %>
+                    <li><%= link_to tag.name, tag_path(tag)%></li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</div>

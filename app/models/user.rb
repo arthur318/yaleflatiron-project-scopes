@@ -8,7 +8,6 @@ class User < ApplicationRecord
     # validates :email, uniqueness: true
 
 
-
     def job_count
        self.jobs.count
     end

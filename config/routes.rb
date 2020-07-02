@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
 
-  resources :jobs, only: [:index, :show]
+  resources :jobs
   resources :tags, only: [:index, :show, :new, :create, :edit, :update]
 end
