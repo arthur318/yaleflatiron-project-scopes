@@ -17,5 +17,5 @@
 @import "style";
 @import "plugins";
 @import "bootstrap";
-/* @import "bootstrap-sprockets"; */
+@import "bootstrap-sprockets";
 /* @import "rails_bootstrap_forms"; */
