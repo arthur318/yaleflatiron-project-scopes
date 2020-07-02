@@ -1,4 +1,4 @@
-/*-- TURN OFF WAYPOINTS/ANIMATION --*
+/* -- TURN OFF WAYPOINTS/ANIMATION --*
  .animated, .os-animation {
 	-webkit-animation: none!important;
 	-moz-animation: none!important;
@@ -9,7 +9,6 @@
 	-moz-animation-delay: none !important;
 	animation-delay: none !important;
 	}
-
 /*-- TURN OFF WAYPOINTS/ANIMATION ON MOBILE --*
 @media (max-width: 767px) {
 .animated, .os-animation {
@@ -23,15 +22,11 @@
 	animation-delay: none !important;
 	}
 }
-
-
-/*============= IF BOOTSTRAP FIXED NAVBAR IS JUMPING ON SCROLL =============*
+/* /*============= IF BOOTSTRAP FIXED NAVBAR IS JUMPING ON SCROLL =============* *
 .fixed-top  {
 	-webkit-backface-visibility: hidden;
 }
-
-
-/*============= WAYPOINTS (DON'T CHANGE CSS BELOW) =============*/
+/*============= WAYPOINTS (DON'T CHANGE CSS BELOW) =============*
 .os-animation{
 	opacity: 0;
 	margin: 0!important;
