@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # get "/user/new"
   get "/pages", to: "pages#index"
+  get "/pages/:page" => "pages#show"
 
   get "/", to: "sessions#home"
   get "/signup", to: "users#new"
