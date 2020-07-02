@@ -91,7 +91,7 @@ button, a, a.btn,
    left: 0;
 }
 .home-inner {
-   background-image: url('../images/computers.jpg');
+   background-image: url('../assets/images/computers.jpg');
    position: fixed;
    height: 100%;
    width: 100%;
@@ -203,7 +203,7 @@ h3.heading {
    z-index: -9999;
 }
 .fixed-dark {
-   background-image: url('../images/fixed/apple.jpg');
+   background-image: url('assets/images/fixed/apple.jpg');
    position: fixed;
    height: 100%;
    width: 100%;
@@ -271,7 +271,7 @@ h3.heading {
 
 /*--- Team Light Background Image --*/
 .fixed-light {
-   background-image: url('../images/fixed/office.jpg');
+   background-image: url('assets/images/fixed/office.jpg');
    position: fixed;
    height: 100%;
    width: 100%;
@@ -354,7 +354,7 @@ blockquote .svg-inline--fa {
 /*============= CONTACT SECTION =============*/
 
 .footer {
-   background: url('../images/footer/footer.jpg') no-repeat;
+   background: url('assets/images/footer/footer.jpg') no-repeat;
    background-size: cover;
    color: white;
    /* background-color: #505962; */
@@ -464,13 +464,13 @@ a.top-scroll:hover {
       font-size: 2rem;
    }
    .fixed-dark {
-      background-image: url('../images/fixed/apple-mobile.jpg')
+      background-image: url('assets/images/fixed/apple-mobile.jpg')
    }
    .fixed-light {
-      background-image: url('../images/fixed/office-mobile.jpg')
+      background-image: url('assets/images/fixed/office-mobile.jpg')
    }
    .footer {
-      background: url('../images/footer/footer-mobile.jpg') no-repeat;
+      background: url('assets/images/footer/footer-mobile.jpg') no-repeat;
    }
    .top-scroll {
       display: none!important;

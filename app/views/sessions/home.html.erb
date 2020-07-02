@@ -9,9 +9,9 @@
 	<!-- Bootstrap CSS https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<!-- Style.css -->
-	<link rel="stylesheet" href="app/assets/stylesheets/style.css">
+	<link rel="stylesheet" href="style.css">
 	<!-- Plugins.css -->
-	<link rel="stylesheet" href="app/assets/stylesheets/plugins.css">
+	<link rel="stylesheet" href="plugins.css">
 	<!-- Google Fonts https://fonts.google.com/ -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 	<!-- Animate.css https://cdnjs.com/libraries/animate.css/
@@ -32,7 +32,7 @@
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg fixed-top">
 			<div class="container-fluid">
-				<a href="#home" class="navbar-brand"><img src="img/nuno.png" alt=""></a>
+				<a href="#home" class="navbar-brand"><%= image_tag 'nuno.png' %></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
@@ -250,7 +250,7 @@
 				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="animate__animated animate__bounceInLeft" data-delay=".2s">
 					<div class="portfolio-item overflow-hidden">
 						<a href="img/portfolio/1.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
-							<img src="img/portfolio/1.jpg" alt="" class="example-image w-100">
+							<%= image_tag 'portfolio/1.jpg', class: "example-image w-100" %>
 						</a>
 					</div>
 				</div>
@@ -258,7 +258,7 @@
 				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="animate__animated animate__bounceInLeft">
 					<div class="portfolio-item overflow-hidden">
 						<a href="img/portfolio/2.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
-							<img src="img/portfolio/2.jpg" alt="" class="example-image w-100">
+							<%= image_tag 'portfolio/2.jpg', class: "example-image w-100" %>
 						</a>
 					</div>
 				</div>
@@ -266,7 +266,7 @@
 				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="animate__animated animate__bounceInRight">
 					<div class="portfolio-item overflow-hidden">
 						<a href="img/portfolio/3.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
-							<img src="img/portfolio/3.jpg" alt="" class="example-image w-100">
+							<%= image_tag 'portfolio/3.jpg', class: "example-image w-100" %>							
 						</a>
 					</div>
 				</div>
@@ -274,7 +274,7 @@
 				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="animate__animated animate__bounceInRight" data-delay=".2s">
 					<div class="portfolio-item overflow-hidden">
 						<a href="img/portfolio/4.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
-							<img src="img/portfolio/4.jpg" alt="" class="example-image w-100">
+							<%= image_tag 'portfolio/4.jpg', class: "example-image w-100" %>							
 						</a>
 					</div>
 				</div>
@@ -282,7 +282,7 @@
 				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="animate__animated animate__bounceInLeft" data-delay=".2s">
 					<div class="portfolio-item overflow-hidden">
 						<a href="img/portfolio/5.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
-							<img src="img/portfolio/5.jpg" alt="" class="example-image w-100">
+							<%= image_tag 'portfolio/5.jpg', class: "example-image w-100" %>
 						</a>
 					</div>
 				</div>
@@ -290,7 +290,7 @@
 				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="animate__animated animate__bounceInLeft">
 					<div class="portfolio-item overflow-hidden">
 						<a href="img/portfolio/6.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
-							<img src="img/portfolio/6.jpg" alt="" class="example-image w-100">
+							<%= image_tag 'portfolio/6.jpg', class: "example-image w-100" %>
 						</a>
 					</div>
 				</div>
@@ -298,7 +298,7 @@
 				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="animate__animated animate__bounceInRight">
 					<div class="portfolio-item overflow-hidden">
 						<a href="img/portfolio/7.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
-							<img src="img/portfolio/7.jpg" alt="" class="example-image w-100">
+							<%= image_tag 'portfolio/7.jpg', class: "example-image w-100" %>
 						</a>
 					</div>
 				</div>
@@ -306,7 +306,7 @@
 				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="animate__animated animate__bounceInRight" data-delay=".2s">
 					<div class="portfolio-item overflow-hidden">
 						<a href="img/portfolio/8.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
-							<img src="img/portfolio/8.jpg" alt="" class="example-image w-100">
+							<%= image_tag 'portfolio/8.jpg', class: "example-image w-100" %>
 						</a>
 					</div>
 				</div>
@@ -340,7 +340,8 @@
 						<div id="team-carousel" class="owl-carousel owl-theme">
 
 							<div class="card">
-								<img src="img/team/team1.jpg" alt="" class="card-img-top rounded-0">
+								<!--img src="img/team/team1.jpg" alt="" class="card-img-top rounded-0"-->
+								<%= image_tag 'team/team1.jpg', class: "card-img-top rounded-0" %>
 								<div class="card-body">
 									<h4 class="font-weight-bold">John Lee</h4>
 									<h5 class="text-nuno">CEO</h5>
@@ -492,7 +493,7 @@
 
 						<div class="col-md-5 px-0 pr-md-3">
 							<img src="img/nuno.png" alt="">
-							<p>At our core is a collection of design and development solutions that represent everything your business needs to compete in the modern marketplace.</p>
+							<p>Our application is still under construction. Please reach out to us if you have any comments or concerns!</p>
 							<strong>Our Location</strong>
 							<p>100 Street Name<br>Our City, AA 10000</p>
 							<strong>Contact Info</strong>
