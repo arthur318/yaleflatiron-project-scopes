@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # resources :users, only: [:new, :show]
 
   # get "/user/new"
+  get "/pages", to: "pages#index"
+
   get "/", to: "sessions#home"
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
