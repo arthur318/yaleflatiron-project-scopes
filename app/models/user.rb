@@ -7,7 +7,6 @@ class User < ApplicationRecord
     # validates :email, presence: true
     # validates :email, uniqueness: true
 
-
     def job_count
        self.jobs.count
     end
@@ -68,7 +67,6 @@ class User < ApplicationRecord
     end
 
 end
-
 
 # Credential.joins(:integration)
 #   .where(user_id: current_user.id)
