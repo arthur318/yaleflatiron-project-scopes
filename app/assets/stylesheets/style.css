@@ -91,7 +91,7 @@ button, a, a.btn,
    left: 0;
 }
 .home-inner {
-   background-image: url('../assets/images/computers.jpg');
+   background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpaper.png');
    position: fixed;
    height: 100%;
    width: 100%;
@@ -203,7 +203,7 @@ h3.heading {
    z-index: -9999;
 }
 .fixed-dark {
-   background-image: url('assets/images/fixed/apple.jpg');
+   background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-12.jpg');
    position: fixed;
    height: 100%;
    width: 100%;
@@ -271,7 +271,7 @@ h3.heading {
 
 /*--- Team Light Background Image --*/
 .fixed-light {
-   background-image: url('assets/images/fixed/office.jpg');
+   background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-6.jpg');
    position: fixed;
    height: 100%;
    width: 100%;
