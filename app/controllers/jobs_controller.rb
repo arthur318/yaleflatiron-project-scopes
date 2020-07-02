@@ -3,8 +3,8 @@ class JobsController < ApplicationController
     before_action :current_job, only: [:show, :edit, :update]
     
     def index
-        @user = User.find(session[:user_id])
-        @jobs = @user.jobs.all
+        # @user = User.find(session[:user_id])
+        @jobs = Job.all
         #Passing in user_id from session.
     end
 
