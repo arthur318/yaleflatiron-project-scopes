@@ -15,12 +15,14 @@ Rails.application.routes.draw do
   post "/signup", to: "users#create"
   get "/users/:id", to: "users#show", as: "user"
 
+
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
 
-  resources :jobs, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  resources :jobs, only: [:index, :show, :new, :create, :edit, :update]
   resources :tags, only: [:index, :show, :new, :create, :edit, :update]
   resources :companies, only: [:index, :show]
   resources :contacts, only: [:show, :new, :create, :edit, :update]
+  resources :users, only: [:show, :new, :create, :edit, :update]
 end
