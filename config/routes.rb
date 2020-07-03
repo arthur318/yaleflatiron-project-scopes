@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   # get "/user/new"
   get "/pages", to: "pages#index"
-  get "/pages/:page" => "pages#show"
+  get "/pages/analytics", to: "pages#analytics"
+  # get "/pages/:page" => "pages#show"
 
   get "/", to: "sessions#home"
   get "/signup", to: "users#new"
@@ -15,6 +16,6 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
 
-  resources :jobs
+  resources :jobs, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   resources :tags, only: [:index, :show, :new, :create, :edit, :update]
 end

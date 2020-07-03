@@ -1,13 +1,10 @@
-<div id="job-show-page-container" class="container-fluid" style="border:10px solid white;">
-    <div class="row" style="border: 8px solid black; border-radius: 10px;">
-        <div class="col-8" style="border: 10px solid white;">
-            <h2>Job Title: <%= @job.role %></h2>
-            <br>
-            <h2>Company: <%= @job.company.name %></h2>
-            <br>
-            <h2>Status: <%= @job.status %></h2>
-            <br>
-            <h2>Location: <%= @job.location %></h2>
-        </div>
-    </div>
+<div class="container">
+    <br>
+    <h1>Job Title: <%= @job.role %></h1>
+    <h4>Company: <%= @job.company.name %></h4>
+    <h4>Status: <%= @job.status %></h4>
+    <h4>Location: <%= @job.location %></h4>
+    <h4>Job Post Link: <%= @job.url%></h4>
+
+    <%= link_to 'Edit', edit_job_path, class: 'btn btn-outline-primary' %>    
 </div>
