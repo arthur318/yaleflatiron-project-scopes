@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  skip_before_action :authenticated, only: [:new, :create]
+  skip_before_action :authenticated, only: [:new, :create, :edit, :update]
 
   # skip_before_action :test => not going to work
   
@@ -28,6 +28,16 @@ class UsersController < ApplicationController
     @user = User.find(session[:user_id])
   end
 
+  def edit
+    @user = User.find(session[:user_id])
+  end
+
+  def update
+    @user = User.find(session[:user_id])
+    @user.update(user_params)
+    redirect_to "/jobs"
+  end
+
   private
 
  def user_params
@@ -38,7 +48,6 @@ class UsersController < ApplicationController
 #  end
 
 end
-
 
 # class UsersController < ApplicationController
 #   def new
