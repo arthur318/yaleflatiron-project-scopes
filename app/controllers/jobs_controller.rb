@@ -10,7 +10,6 @@ class JobsController < ApplicationController
         @offer = @user.offer
         @rejected = @user.rejected
         @unavailable = @user.unavailable
-        #Passing in user_id from session.
     end
 
     def show
