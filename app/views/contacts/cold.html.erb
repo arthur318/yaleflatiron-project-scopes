@@ -1,0 +1,74 @@
+<div class="container">
+    <br>
+<%= link_to 'Back', :back, class: 'btn btn-outline-primary' %> 
+
+
+    <h2>Sample Cold Email</h2>
+
+<form>
+  <div class="form-group">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+Dear <%=@contact.first_name%>,
+
+My name is <%=@user.name%>, and I noticed your work experience with <%=@contact.company.name%>. I follow you on [SOCIAL MEDIA SITE] and noticed and we’re both are interested in [TOPIC]. I find your posts insightful and helpful.
+
+I’ve been a [JOB TITLE] for the past [NUMBER] years, and I’m looking to get an introduction to <%=@contact.company.name%> where I want to learn more about [SKILL NAME], [SKILL NAME] and [SKILL NAME].
+
+I wonder if I can get an introduction to [NAME OF PERSON] for [REASON]. Here is my LinkedIn Profile [LINKEDIN PROFILE LINK] for you to include in your introduction. If you would prefer to speak to me before making an introduction, I am at your disposal on [DAYS] next week from [TIME SPAN WITH TIME ZONE]. You can email me at <%=@user.email%> or by phone at [PHONE NUMBER].
+
+Thank you.
+
+Best,
+
+<%=@user.name%>
+
+    
+    
+    
+    
+    </textarea>
+  </div>
+</form>
+
+<form>
+  <div class="form-group">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+
+Dear <%=@contact.first_name%>,
+
+My name is <%=@user.name%>. I’m a [YEAR] grad from [NAME OF SCHOOL]. (I know you were a few years before me), and I came across your name on our alumni site.
+
+I’d love to get your career advice for 15-20 minutes. I’m currently working at [COMPANY], but many of my friends work in [INDUSTRY] and each time they tell me how much they love their job, I get more interested.
+
+Most of them have told me that if I’m interested in [INDUSTRY], I have to talk to someone at <%=@contact.company.name%>. Do you think I could pick your brain on your job and what motivated you to choose <%=@contact.company.name%>? I’d especially love to know how you made your choices after graduating from [NAME OF SCHOOL].
+
+Would it be possible for us to meet? I can work around whatever works for you.
+
+Thank you.
+
+Sincerely,
+
+<%=@user.name%>
+    
+    </textarea>
+  </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.cnbc.com/2019/01/30/10-email-templates-every-successful-job-hunter-needs.html">Source: CNBC</a>
+
+
+
+
+
+
+<div class="container">

@@ -7,6 +7,10 @@ class User < ApplicationRecord
     # validates :email, presence: true
     # validates :email, uniqueness: true
 
+    def my_companies
+        Company.joins(:jobs).where(jobs: {user_id: self.id})
+    end
+    
     def job_count
        self.jobs.count
     end

@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   # resources :users, only: [:new, :show]
 
+  get "/contacts/:id/cold", to: "contacts#cold"
+  get "/contacts/:id/thankyou", to: "contacts#thankyou"
+
   # get "/user/new"
   get "/pages", to: "pages#index"
   get "/pages/analytics", to: "pages#analytics"
@@ -18,4 +21,6 @@ Rails.application.routes.draw do
 
   resources :jobs, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   resources :tags, only: [:index, :show, :new, :create, :edit, :update]
+  resources :companies, only: [:index, :show]
+  resources :contacts, only: [:show, :new, :create, :edit, :update]
 end

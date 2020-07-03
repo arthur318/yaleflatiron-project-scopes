@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-
+    skip_before_action :authenticated
     before_action :current_job, only: [:show, :edit, :update]
     
     def index
@@ -14,7 +14,7 @@ class JobsController < ApplicationController
     end
 
     def show
-        # @job = Job.find(params[:id])
+        @job = Job.find(params[:id])
     end
 
     def new

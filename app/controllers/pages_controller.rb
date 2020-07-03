@@ -8,7 +8,12 @@ class PagesController < ApplicationController
         @user = User.find(session[:user_id])
     end
 
-    def show
-        # render template: "pages/#{params[:page]}"
-    end
+    # def show
+    #     render template: "pages/#{params[:page]}"
+    #     @user = User.find(session[:user_id])
+    
+    # end
+
+
+
 end

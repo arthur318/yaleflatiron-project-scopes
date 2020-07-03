@@ -1,0 +1,13 @@
+<div class="container">
+  <h1> All Companies</h1>
+
+
+<ul class=”list-group”>
+    <% @all.each do |c| %>
+        
+        <%= link_to "#{c.name}", company_path(c), class: "list-group-item list-group-item-light"%>
+        </li>
+    <% end %>
+</ul>
+
+</div>

@@ -1,0 +1,53 @@
+<div class="container">
+    <br>
+<%= link_to 'Back', :back, class: 'btn btn-outline-primary' %> 
+
+
+    <h2>Sample Thank You Post-Interview</h2>
+
+<form>
+  <div class="form-group">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+
+
+Hi <%=@contact.first_name%>,
+
+Thanks for taking the time to chat today. I especially enjoyed talking about [SPECIFIC TOPIC].
+
+I really think this is a great fit for the both of us. Hope to hear from you very soon.
+
+Sincerely,
+
+<%=@user.name%>
+
+</textarea>
+  </div>
+</form>
+
+
+    <a href="https://www.cnbc.com/2019/01/30/10-email-templates-every-successful-job-hunter-needs.html">Source: CNBC</a>
+
+
+
+
+
+<form>
+  <div class="form-group">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+
+
+Hi <%=@contact.first_name%>,
+
+Thank you so much for meeting with me today. It was such a pleasure to learn more about the team and position, and I’m very excited about the opportunity to join <%=@contact.company.name%> and help [bring in new clients/develop world-class content/anything else awesome you would be doing] with your team.
+
+I look forward to hearing from you about the next steps in the hiring process, and please do not hesitate to contact me if I can provide additional information.
+
+Best regards,
+<%=@user.name%>
+
+</textarea>
+  </div>
+</form>
+
+    <a href="https://www.themuse.com/advice/how-to-write-an-interview-thankyou-note-an-email-template">Source: The Muse</a>
+<div class="container">
