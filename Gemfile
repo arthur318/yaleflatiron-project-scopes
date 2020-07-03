@@ -58,3 +58,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #bcrypt
 gem 'bcrypt', '~> 3.1.7'
+
+#charts
+gem "chartkick"
+
+#group by day
+gem 'groupdate'
+
+#highcharts
+gem 'highcharts-rails'

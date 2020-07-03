@@ -2,7 +2,14 @@ Rails.application.routes.draw do
 
   # resources :users, only: [:new, :show]
 
+  get "/contacts/:id/cold", to: "contacts#cold"
+  get "/contacts/:id/thankyou", to: "contacts#thankyou"
+
   # get "/user/new"
+  get "/pages", to: "pages#index"
+  get "/pages/analytics", to: "pages#analytics"
+  # get "/pages/:page" => "pages#show"
+
   get "/", to: "sessions#home"
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
@@ -12,6 +19,8 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
 
-  resources :jobs
+  resources :jobs, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   resources :tags, only: [:index, :show, :new, :create, :edit, :update]
+  resources :companies, only: [:index, :show]
+  resources :contacts, only: [:show, :new, :create, :edit, :update]
 end

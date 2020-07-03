@@ -7,16 +7,21 @@ class User < ApplicationRecord
     # validates :email, presence: true
     # validates :email, uniqueness: true
 
+    def my_companies
+        Company.joins(:jobs).where(jobs: {user_id: self.id})
+    end
+    
     def job_count
        self.jobs.count
     end
 
-    def jobs
+
+    def my_jobs
         User.joins(:jobs)
     end
 
     def job_by_status(status)
-        Job.where(id: self.id, status: status)
+        Job.where(user_id: self.id, status: status)
     end
 
     def prospect

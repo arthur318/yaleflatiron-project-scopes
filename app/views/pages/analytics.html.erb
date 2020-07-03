@@ -1,0 +1,73 @@
+
+
+<div class="container">
+  <h1> Job Dashboard </h1>
+
+<div class="row">
+  <div class="col-sm">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"> Opportunities </h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= @user.job_count %></h6>
+            <p class="card-text">Total number of jobs in the pipeline </p>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="card">
+    <div class="card-body">
+        <h5 class="card-title"> Prospects </h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%= @user.prospect.count %></h6>
+        <p class="card-text"> Opportunities in wishilist </p>
+    </div>
+    </div>
+  </div>
+    <div class="col-sm">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"> Applied </h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= @user.applied.count %></h6>
+            <p class="card-text"> Applications submitted </p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"> Interviewing </h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= @user.interviewing.count %></h6>
+            <p class="card-text"> Ongoing interviews </p>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="card">
+    <div class="card-body">
+        <h5 class="card-title"> Rejected </h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%= @user.rejected.count %></h6>
+        <p class="card-text"> Applications rejected </p>
+    </div>
+    </div>
+  </div>
+    <div class="col-sm">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"> Offer </h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= @user.offer.count %></h6>
+            <p class="card-text"> Job offers received </p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+<%= pie_chart Job.group(:status).count %>
+  </div>
+</div>
+
+</div>
+
