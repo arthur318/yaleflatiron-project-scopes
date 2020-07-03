@@ -1,0 +1,55 @@
+<br>
+<div class="container">
+    <h1>Edit Job</h1>
+    
+        <%= form_for @job, :html => {:class => "form-horizontal center"} do |f| %>
+
+            <div class="form-group">
+                <%= f.label :status, class: "col-md-4 control-label" %><br>
+                <%= f.select :status, @stages%> 
+            </div>
+
+            <div class="form-group">
+            <%= f.label :company_name, class: "col-md-4 control-label"  %>
+            <%= f.text_field :company_name, list: "companies_autocomplete", class: "form-control" %>
+            <datalist id="companies_autocomplete">
+                <% Company.all.each do |company| %>
+                    <option value="<%= company.name %>">
+                <% end %>
+            </datalist>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <%= f.label :role, class: "col-md-4 control-label" %>
+                <%= f.text_field :role, class: "form-control"%>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <%= f.label "Location (City)", class: "col-md-4 control-label" %>
+                <%= f.text_field :location, class: "form-control"%>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <%= f.label "Job Posting Link", class: "col-md-4 control-label" %>
+                <%= f.text_field :url, class: "form-control"%>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <%= f.label "Job Posting Link", class: "col-md-4 control-label" %>
+                <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name, class: "form-control"%>
+                            <%= f.fields_for :tags, @job.tags.build do |tags_fields| %>
+                <%= tags_fields.text_field :name %>
+            <% end %>
+            </div>
+
+            <br>
+
+
+            <%= f.submit "Submit", class: "btn btn-default btn-primary" %>  
+        <% end %>
+
+</div>

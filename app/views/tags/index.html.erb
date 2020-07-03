@@ -1,0 +1,14 @@
+<br>
+<div class="container">
+  <h1> All Tags</h1>
+
+
+<ul class=”list-group”>
+    <% @tags.each do |tag| %>
+        
+        <%= link_to tag.name, tag_path(tag), class: "list-group-item list-group-item-light"%>
+        </li>
+    <% end %>
+</ul>
+
+</div>

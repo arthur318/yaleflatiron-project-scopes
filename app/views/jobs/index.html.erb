@@ -1,0 +1,47 @@
+<br>
+<div class="container">
+  <h1> All Opportunities </h1>
+
+<h3> Prospects </h3>
+<ul class=”list-group”>
+    <% @prospects.each do |job| %>
+        <%= link_to "#{job.role} at #{job.company.name}", job_path(job), class: "list-group-item list-group-item-light"%></li>
+    <% end %>
+</ul>
+
+<h3> Applied </h3>
+<ul class=”list-group”>
+    <% @applied.each do |job| %>
+        <%= link_to "#{job.role} at #{job.company.name}", job_path(job), class: "list-group-item list-group-item-primary"%></li>
+    <% end %>
+</ul>
+
+<h3> Interviewing </h3>
+<ul class=”list-group”>
+    <% @interviewing.each do |job| %>
+        <%= link_to "#{job.role} at #{job.company.name}", job_path(job), class: "list-group-item list-group-item-warning"%></li>
+    <% end %>
+</ul>
+
+<h3> Offer </h3>
+<ul class=”list-group”>
+    <% @offer.each do |job| %>
+        <%= link_to "#{job.role} at #{job.company.name}", job_path(job), class: "list-group-item list-group-item-success"%></li>
+    <% end %>
+</ul>
+
+<h3> Rejected </h3>
+<ul class=”list-group”>
+    <% @rejected.each do |job| %>
+        <%= link_to "#{job.role} at #{job.company.name}", job_path(job), class: "list-group-item list-group-item-danger"%></li>
+    <% end %>
+</ul>
+
+<h3> Unavailable </h3>
+<ul class=”list-group”>
+    <% @unavailable.each do |job| %>
+        <%= link_to "#{job.role} at #{job.company.name}", job_path(job), class: "list-group-item list-group-item-dark"%></li>
+    <% end %>
+</ul>
+
+</div>

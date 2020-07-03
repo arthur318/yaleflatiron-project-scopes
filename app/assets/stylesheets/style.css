@@ -1,0 +1,515 @@
+/*============= RESETS =============*/
+
+/*-- iPhone X Remove Gutters --*/
+html {
+   padding: env(safe-area-inset);
+}
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html, body {
+   overflow-x: hidden;
+   font-family: 'Lato', sans-serif;
+   color: #505962;
+}
+.text-nuno {
+   color: #1EBBA3;
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+   content: "";
+   height: 64px;
+   display: block;
+   margin-top: -64px;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+   padding: 16px;
+}
+
+/*============= NAVIGATION =============*/
+.navbar-brand img {
+   height: 32px;
+}
+.navbar {
+   padding: 12px 16px;
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 2px;
+   font-size: .14px;
+   transition: background-color .5s ease;
+}
+.navbar-nav li {
+   padding-right: 12px;
+}
+.navbar-nav .nav-link {
+   color: white;
+   padding-top: 12px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+   color: #1EBBA3;
+}
+.custom-toggler-icon {
+   color: white;
+   font-size: 19.6px;
+}
+.navbar.solid,
+.navbar.solid-toggle {
+   background: rgba(0, 0, 0, .7)!important;
+   transition: background-color 1s ease;
+}
+
+/*-- Remove Button Outline --*/
+button:focus, a:focus, a.btn:focus {
+   outline: 0;
+   -webkit-appearance: none;
+   box-shadow: none;
+   transition: all .6s ease;
+}
+button, a, a.btn,
+.svg-inline--fa {
+   transition: all .6s ease;
+}
+
+/*============= LANDING PAGE =============*/
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   display: table;
+   z-index: -1;
+}
+.home-wrap {
+   clip: rect(0, auto, auto, 0);
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+}
+.home-inner {
+   background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpaper.png');
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   will-change: transform;
+   display: table;
+}
+
+/*-- Landing Page Caption --*/
+.caption {
+   z-index: 1;
+   position: absolute;
+   top: 38%;
+   width: 100%;
+   max-width: 100%;
+}
+.caption h1 {
+   font-size: 72px;
+   letter-spacing: 5px;
+   text-shadow: 2px 2px 12px black;
+   padding-bottom: 16px;
+}
+.caption h3 {
+   font-size: 40px;
+   text-shadow: 2px 2px 8px black;
+   padding-bottom: 32px;
+}
+.caption .btn-lg {
+   border-width: medium;
+   padding: 12px 24px;
+   font-size: 12px;
+}
+
+/*-- Bouncing Down Arrow --*/
+.arrow {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   animation: bounce 2s infinite;
+   -webkit-animation: bounce 2s infinite;
+}
+.down-arrow .svg-inline--fa {
+   color: white;
+   font-size: 2.32px;
+   opacity: .3;
+}
+.down-arrow .svg-inline--fa:hover {
+   opacity: .8;
+}
+
+/*============= FEATURES SECTION =============*/
+
+.btn-sm {
+   border-width: medium;
+   border-radius: 0;
+   padding: 8px 12px;
+   text-transform: uppercase;
+   font-size: 14.4px;
+   margin: 16px;
+}
+.btn-nuno {
+   background-color: #1EBBA3;
+   color: white;
+}
+.btn-nuno:hover {
+   background-color: #189582;
+   color: white;
+}
+h3.heading {
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 30.4px;
+   text-align: center;
+   margin-bottom: 30.4px;
+}
+.heading-underline {
+   width: 48px;
+   height: .32px;
+   background-color: #1EBBA3;
+   margin: 0 auto 32px;
+}
+.feature span {
+   color: #1EBBA3;
+   margin-bottom: 9.6px;
+}
+.feature h3 {
+   text-transform: uppercase;
+   font-size: 15px;
+   padding-bottom: 6.4px;
+}
+
+/*===== FIXED BACKGROUND IMG DARK =====*/
+
+/*--- iOS Fixed Background Image --*/
+.fixed {
+   position: relative;
+   width: 100%;
+}
+.fixed-wrap {
+   clip: rect(0, auto, auto, 0);
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: -9999;
+}
+.fixed-dark {
+   background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-12.jpg');
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   will-change: transform;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   display: table;
+}
+.dark {
+   background-color: rgba(0, 0, 0, .7);
+   padding: 112px 0;
+   z-index: 1000;
+}
+
+/*============= PORTFOLIO SECTION =============*/
+
+.portfolio-item img:hover {
+   transform: scale(1.3);
+   cursor: zoom-in;
+}
+.portfolio-item img {
+   transition: transform .4s ease;
+}
+
+/*============= PRICING SECTION =============*/
+
+.pricing-column {
+   background-color: white;
+   height: 100%;
+   padding: 19.6px;
+   border-top: 4px solid #1EBBA3;
+   box-shadow: 0 0 12px rgba(0, 0, 0, .075);
+   transition: transform .7s ease;
+   position: relative;
+   overflow: hidden;
+}
+.pricing-column:hover {
+   transform: scale(1.1);
+}
+.pricing-column h4 {
+   font-size: 12px;
+   font-weight: 700;
+}
+.ribbon {
+   background-color: #6c757d;
+   color: white;
+   font-size: 12px;
+   font-weight: 700;
+   height: 32px;
+   width: 160px;
+   padding-top: 6.4px;
+   position: absolute;
+   transform: rotate(45deg);
+   right: -212px;
+   top: 24px;
+   box-shadow: 0 0 .32px rgba(0, 0, 0, .25);
+}
+
+/*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
+
+/*--- Team Light Background Image --*/
+.fixed-light {
+   background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-6.jpg');
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   will-change: transform;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   display: table;
+}
+.light {
+   background-color: rgba(255, 255, 255, .75);
+   padding: 80px 0;
+   z-index: 1000;
+}
+.owl-stage {
+   display: flex;
+}
+.card {
+   height: 100%;
+   border-radius: 0;
+   text-align: center;
+   margin: 0 16px;
+   border: 2px solid rgba(0, 0, 0, .075);
+   box-shadow: 0 0 12px rgba(0, 0, 0, .075);
+   transition: transform .4s ease;
+}
+.card:hover {
+   transform: scale(.95);
+}
+button.owl-dot.active span,
+button.owl-dot:hover span {
+   background: #1EBBA3!important;
+}
+ul.social {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   font-size: 24px;
+}
+ul.social li {
+   display: inline;
+   padding-right: 12px;
+}
+ul.social li a {
+   color: #1EBBA3;
+   transition: all .2s ease;
+}
+ul.social li a:hover {
+   color: #505962;
+}
+
+/*============= SKILLS SECTION =============*/
+
+
+/*============= CLIENTS SECTION =============*/
+
+#clients-carousel {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.clients img {
+   border-radius: 50%;
+   transition: transform .3s ease;
+}
+.clients img:hover {
+   transform: scale(.95);
+}
+blockquote .svg-inline--fa {
+   margin: 16px;
+   color: #1EBBA3;
+}
+.clients-hr {
+   border-top: 2px solid #1EBBA3;
+}
+
+/*============= CONTACT SECTION =============*/
+
+.footer {
+   background: url('https://wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-4.jpg') no-repeat;
+   background-size: cover;
+   color: white;
+   /* background-color: #505962; */
+}
+.row.outer {
+   background-color: rgba(57, 63, 70, .85);
+   padding: 16px 32px 48px;
+}
+.footer img {
+   height: 32px;
+   margin: 24px 0;
+}
+.footer a,
+.footer ul.social li a {
+   color: white;
+}
+.footer ul.social li a:hover {
+   color: #1EBBA3;
+}
+.footer h3 {
+   text-transform: uppercase;
+   margin: 24px 0;
+}
+
+/*--- Contact Form --*/
+.form-group {
+   margin-bottom: 15px;
+}
+.form-control {
+   background-color: #53595f;
+   border-radius: 0;
+   border: 3px solid #666b71;
+   color: white!important;
+   font-size: 12px;
+}
+.form-control:focus {
+   background-color: #53595f;
+   border: 3px solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+   color: #b2b5b8!important;
+}
+hr.socket {
+   border-top: .32px solid #666b71;
+   width: 100%;
+}
+
+/*============= TOP SCROLL =============*/
+
+a.top-scroll {
+   right: 1.32px;
+   bottom: 1.32px;
+   position: fixed;
+   opacity: .3;
+   z-index: 1000;
+   display: none;
+}
+a.top-scroll:hover {
+   opacity: .5;
+}
+.top-scroll .svg-inline--fa {
+   background: white;
+   color: #53595f;
+   font-size: 48px;
+   height: 27.2px;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+   .caption h1 {
+      font-size: 56px;
+      letter-spacing: .32px;
+      padding-bottom: 12px;
+   }
+   .caption h3 {
+      font-size: 2.32px;
+      padding-bottom: 27.2px;
+   }
+   .caption .btn-lg {
+      padding: 8px 1.32px;
+      font-size: 16px;
+   }
+   .clients img {
+      max-width: 50%;
+      margin: 0 auto;
+   }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+   .caption h1 {
+      font-size: 32px;
+      letter-spacing: 3px;
+      padding-bottom: 8px;
+   }
+   .caption h3 {
+      font-size: 27.2px;
+      padding-bottom: 1.32px;
+   }
+   .caption .btn-lg {
+      padding: 9.6px 12px;
+   }
+   #features h1 {
+      font-size: 32px;
+   }
+   .fixed-dark {
+      background-image: url('assets/images/fixed/apple-mobile.jpg')
+   }
+   .fixed-light {
+      background-image: url('assets/images/fixed/office-mobile.jpg')
+   }
+   .footer {
+      background: url('assets/images/footer/footer-mobile.jpg') no-repeat;
+   }
+   .top-scroll {
+      display: none!important;
+   }
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+   .caption h1 {
+      font-size: 30.4px;
+      letter-spacing: 2px;
+      padding-bottom: 6.4px;
+   }
+   .caption h3 {
+      font-size: 1.32px;
+      padding-bottom: 16px;
+   }
+   .caption .btn-lg {
+      padding: 6.4px 14.4px;
+      font-size: 14.4px;
+   }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

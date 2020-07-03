@@ -1,0 +1,11 @@
+<br>
+<div class="container">
+<h1><%= @tag.name %></h1>
+
+<ul>
+  <% @tag.jobs.each do |job| %>
+    <li><%= link_to "#{job.role} at #{job.company.name}", job_path(job)%></li>
+  <% end %>
+</ul>
+
+    <%= link_to 'Edit', edit_tag_path, class: 'btn btn-outline-primary' %>    
