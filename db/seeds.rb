@@ -11,7 +11,7 @@ u1 = User.create(name: "Arthur", username: "Arthur", email: "arthur318@yahoo.com
 company1 = Company.create(name: "Google", website: "https://www.google.com/")
 company2 = Company.create(name: "Facebook", website: "https://www.facebook.com/")
 
-job1 = Job.create(user_id: u1.id, company_id: company1.id, role: "Engineer", status: "Prospect", location: "San Francisco")
+# job1 = Job.create(user_id: u1.id, company_id: company1.id, role: "Engineer", status: "Prospect", location: "San Francisco")
 
 tag1 = Tag.create(name: "high priority")
 tag2 = Tag.create(name: "tech")

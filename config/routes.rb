@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get "/pages/analytics", to: "pages#analytics"
   # get "/pages/:page" => "pages#show"
 
-  get "/", to: "sessions#new"
+  get "/", to: "sessions#home"
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
   get "/users/:id", to: "users#show", as: "user"

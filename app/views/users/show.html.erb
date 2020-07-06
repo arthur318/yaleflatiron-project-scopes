@@ -1,28 +1,23 @@
 <br>
 <div class="container">
-  <h1> Hi <%= @user.username %>! </h1>
 
-  <br>
-
-  <h4> Your current information are as the following: <h4>
-
+  <h1> Welcome, <%= @user.username %>! </h1>
     <h4>Name: <%= @user.name %></h4>
     <h4>Username: <%= @user.username %></h4>
     <h4>Email: <%= @user.email %></h4>
-	<h4>Applications: <%= @user.jobs.count %></h4>
+	  <h4>Applications: <%= @user.jobs.count %></h4>
+  <br>
+
+  <%= link_to 'Edit Info', edit_user_path, class: 'btn btn-outline-primary' %>    
 
   <br>
 
-    <%= link_to 'Edit Info', edit_user_path, class: 'btn btn-outline-primary' %>    
+  <%= form_with url: "/logout", method: "delete" do |f| %>
 
-<br>
+  <br>
 
-<%= form_with url: "/logout", method: "delete" do |f| %>
+  <%= f.submit "Logout", class: 'btn btn-outline-primary' %>
 
-<br>
-
-    <%= f.submit "Logout" %>
-
-<% end %>
+  <% end %>
 
 </div>
