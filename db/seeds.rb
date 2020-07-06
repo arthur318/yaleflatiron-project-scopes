@@ -13,8 +13,8 @@ company2 = Company.create(name: "Facebook", website: "https://www.facebook.com/"
 
 # job1 = Job.create(user_id: u1.id, company_id: company1.id, role: "Engineer", status: "Prospect", location: "San Francisco")
 
-tag1 = Tag.create(name: "high priority")
-tag2 = Tag.create(name: "tech")
+tag1 = Tag.create(name: "High Priority")
+tag2 = Tag.create(name: "Tech")
 
 jobtag1 = JobTag.create(job_id: job1.id, tag_id: tag1.id)
 jobtag2 = JobTag.create(job_id: job1.id, tag_id: tag2.id)
