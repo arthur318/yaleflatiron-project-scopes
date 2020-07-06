@@ -32,7 +32,7 @@ To run the program, run `rails s` in your terminal and open your browser to the 
 ## Features 
 
 1. **Sign Up and Log In:** Free sign-ups and log-ins! Passwords are stored securely using `bcrypt` in the database as digests from which the actual user password will not be displayed.
-2. **CRUD Actions for Job Applications:** Users are able to create, review, edit, and delete application entries. Users are able to create jobs in the following status: Prospects, Applied, Interviewing, Offer, Rejected, Unavailable. The deleting feature is replaced by setting the status to **Unavailable**. In this way, users will be able to keep a record of all their job applications.
+2. **CRUD Actions for Job Applications:** Users are able to create, review, edit, and delete application entries. Users are able to create jobs in the following status: Prospects, Applied, Interviewing, Offer, Rejected, Unavailable. The deleting feature is replaced by setting the status to "Unavailable". In this way, users will be able to keep a record of all their job applications.
 3. **CRU Actions for Tags:** Users are able to create, review, and edit tags for their applications. Users will be able to sort applications according to different tags, and view their job applications for specific tags.
 4. **CRU Actions for Company Contacts:** Users are able to create, review, and edit the profile of their contacts from different companies. Users will be able to sort contacts from different companies, and view their contacts for a specific company.
 5. **Auto-Generated Email Templates:** Scopes automatically generates **Cold Emails** and **Thank you Emails** for users. Users are able to choose which contact from which company is the recipient of the email.
