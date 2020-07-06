@@ -1,6 +1,6 @@
-# Scopes Job Application Tracking App
+# Scopes - Job Application Tracker
 
-- [Scopes Job Application Tracking App](#scopes-job-application-tracking-app)
+- [Scopes - Job Application Tracker](#scopes---job-application-tracker)
   - [Description](#description)
   - [Installation & How to Run](#installation--how-to-run)
     - [Setup](#setup)
