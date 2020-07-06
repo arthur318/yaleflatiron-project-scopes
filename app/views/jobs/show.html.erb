@@ -8,7 +8,7 @@
         Status: <%= link_to "#{@job.status}", "/jobs" %>
     </h4>
     <h4>Location: <%= @job.location %></h4>
-    <h4>Job Post Link: <%= @job.url %></h4>
+    <h4>Job Post Link: <%= link_to @job.url, "#{@job.url}" %></h4>
     <h4>
         Related Tags: <% @job.tags.each do |tags|%> 
             <%= link_to "#{tags.name}", "/tags/#{tags.id}"%>

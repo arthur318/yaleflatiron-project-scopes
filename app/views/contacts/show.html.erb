@@ -1,8 +1,6 @@
 <div class="container">
     <br>
-    <%= link_to 'Back',company_path(@contact.company), class: 'btn btn-outline-primary' %> 
-
-    <h1><%= "#{@contact.first_name} #{@contact.last_name}" %></h1>
+    <h1><%= "#{@contact.first_name} #{@contact.last_name}" %> <%= link_to 'Edit', edit_contact_path, class: 'btn btn-outline-primary' %> </h1>
     <h4>Title: <%= @contact.title %></h4>
     <h4>Email: <%= @contact.email %></h4>
     <h4>Title: <%= @contact.phone %></h4>
@@ -13,5 +11,6 @@
     <a class="btn btn-primary" href='/contacts/<%=@contact.id%>/cold', role="button">Cold Email</a>
         <a class="btn btn-primary" href='/contacts/<%=@contact.id%>/thankyou', role="button">Thank You Email</a>
 
-</div>
+    <%= link_to 'Back',company_path(@contact.company), class: 'btn btn-outline-primary' %>
 
+</div>
