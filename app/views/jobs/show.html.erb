@@ -1,10 +1,19 @@
 <div class="container">
     <br>
     <h1>Job Title: <%= @job.role %></h1>
-    <h4>Company: <%= @job.company.name %></h4>
-    <h4>Status: <%= @job.status %></h4>
+    <h4>
+        Company: <%= link_to "#{@job.company.name}", "/companies/#{@job.company.id}" %>
+    </h4>
+    <h4>
+        Status: <%= link_to "#{@job.status}", "/jobs" %>
+    </h4>
     <h4>Location: <%= @job.location %></h4>
-    <h4>Job Post Link: <%= @job.url%></h4>
+    <h4>Job Post Link: <%= @job.url %></h4>
+    <h4>
+        Related Tags: <% @job.tags.each do |tags|%> 
+            <%= link_to "#{tags.name}", "/tags/#{tags.id}"%>
+        <% end %>
+    </h4>
 
     <%= link_to 'Edit', edit_job_path, class: 'btn btn-outline-primary' %>    
 </div>

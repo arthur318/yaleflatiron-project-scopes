@@ -1,15 +1,15 @@
 <br>
 
 <div class="container">
-  <h1> Job Dashboard </h1>
+  <h1> Application Dashboard <%= link_to 'Applications'.html_safe, "/jobs", class: 'btn btn-outline-primary' %> </h1>
 
 <div class="row">
   <div class="col-sm">
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title"> Opportunities </h5>
+            <h5 class="card-title"> All Applications </h5>
             <h6 class="card-subtitle mb-2 text-muted"><%= @user.job_count %></h6>
-            <p class="card-text">Total number of jobs in the pipeline </p>
+            <p class="card-text">Total Number of Applications </p>
         </div>
     </div>
   </div>
@@ -18,7 +18,7 @@
     <div class="card-body">
         <h5 class="card-title"> Prospects </h5>
         <h6 class="card-subtitle mb-2 text-muted"><%= @user.prospect.count %></h6>
-        <p class="card-text"> Opportunities in wishilist </p>
+        <p class="card-text"> Opportunities in Wishilist </p>
     </div>
     </div>
   </div>
@@ -27,7 +27,7 @@
         <div class="card-body">
             <h5 class="card-title"> Applied </h5>
             <h6 class="card-subtitle mb-2 text-muted"><%= @user.applied.count %></h6>
-            <p class="card-text"> Applications submitted </p>
+            <p class="card-text"> Applications Submitted </p>
         </div>
     </div>
   </div>
@@ -39,7 +39,7 @@
         <div class="card-body">
             <h5 class="card-title"> Interviewing </h5>
             <h6 class="card-subtitle mb-2 text-muted"><%= @user.interviewing.count %></h6>
-            <p class="card-text"> Ongoing interviews </p>
+            <p class="card-text"> Ongoing Interviews </p>
         </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
     <div class="card-body">
         <h5 class="card-title"> Rejected </h5>
         <h6 class="card-subtitle mb-2 text-muted"><%= @user.rejected.count %></h6>
-        <p class="card-text"> Applications rejected </p>
+        <p class="card-text"> Applications Rejected </p>
     </div>
     </div>
   </div>
@@ -57,7 +57,7 @@
         <div class="card-body">
             <h5 class="card-title"> Offer </h5>
             <h6 class="card-subtitle mb-2 text-muted"><%= @user.offer.count %></h6>
-            <p class="card-text"> Job offers received </p>
+            <p class="card-text"> Job Offers Received </p>
         </div>
     </div>
   </div>
