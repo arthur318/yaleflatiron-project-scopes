@@ -9,7 +9,6 @@ class Tag < ApplicationRecord
           tag = Tag.find_or_create_by(tag_attribute)
           self.tags << tag
         end
-      end
-
+    end
 
 end

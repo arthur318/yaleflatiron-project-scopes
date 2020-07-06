@@ -1,9 +1,7 @@
 <div class="container">
     <br>
-<%= link_to 'Back', :back, class: 'btn btn-outline-primary' %> 
 
-
-    <h2>Sample Cold Email</h2>
+    <h2>Sample Cold Email <%= link_to 'Back', :back, class: 'btn btn-outline-primary' %> </h2>
 
 <form>
   <div class="form-group">
@@ -21,19 +19,15 @@ Thank you.
 Best,
 
 <%=@user.name%>
-
-    
-    
-    
-    
-    </textarea>
-  </div>
+</textarea>
+</div>
 </form>
+
+<br>
 
 <form>
   <div class="form-group">
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
-
 Dear <%=@contact.first_name%>,
 
 My name is <%=@user.name%>. I’m a [YEAR] grad from [NAME OF SCHOOL]. (I know you were a few years before me), and I came across your name on our alumni site.
@@ -49,26 +43,12 @@ Thank you.
 Sincerely,
 
 <%=@user.name%>
-    
     </textarea>
   </div>
 </form>
 
-
-
-
-
-
-
-
-
-
-
     <a href="https://www.cnbc.com/2019/01/30/10-email-templates-every-successful-job-hunter-needs.html">Source: CNBC</a>
 
-
-
-
-
-
 <div class="container">
+
+<br>

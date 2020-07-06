@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 
   resources :jobs, only: [:index, :show, :new, :create, :edit, :update]
   resources :tags, only: [:index, :show, :new, :create, :edit, :update]
-  resources :companies, only: [:index, :show]
+  resources :companies, only: [:index, :show, :new, :create, :edit, :update]
   resources :contacts, only: [:show, :new, :create, :edit, :update]
   resources :users, only: [:show, :new, :create, :edit, :update]
 end
